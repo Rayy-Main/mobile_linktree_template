@@ -23,7 +23,7 @@ a {
 .container-bg {
   height: 100vh;
   font-family:'Montserrat', sans-serif;
-  padding: 60px 20px;
+  padding: 60px 20px 0 20px;
   color: var(--cor-p1);
   background: radial-gradient(farthest-corner at 20% 0%, rgba(178, 6, 97, 1) 2%, rgba(16, 11, 58, 1)65%, rgba(255, 7, 139, 1)95%);
   background-repeat: no-repeat;
@@ -92,12 +92,12 @@ i.fa-brands{
 .feito{
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
-font-style: italic;
-  justify-content: flex-start;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-left: 45px;
+  font-style: italic;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-right: 35px;
   position: relative;
 }
 .feito::after{
@@ -105,14 +105,14 @@ font-style: italic;
   width: 22px;
   height: 22px;
   display: inline;
-  right: 35px;
+  right: -30px;
   background-image: url("../img/heart-regular_white.svg");
   background-repeat: no-repeat;
   position: absolute;
 }
 
 #swift button{
-  display: flex;
+display: flex;
 justify-content: flex-start;
 height: 25px;
 width: 60px;
@@ -127,7 +127,7 @@ margin-bottom: 32px;
   content: "";
   width: 32px;
   height: 32px;
-  display: inline-block;
+  display: inline;
   background-image: url("../img/moon.svg");
   position: absolute;
   top: -3px;
