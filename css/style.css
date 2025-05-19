@@ -1,0 +1,198 @@
+body, h1, a, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+:root {
+  --cor-p1: #FAFBF4;
+  --cor-p2: #2D2926;
+}
+/* --------------------------RESET------------------------------ */
+.container-bg {
+  height: 100vh;
+  font-family:'Montserrat', sans-serif;
+  padding: 60px 20px;
+  color: var(--cor-p1);
+  background: radial-gradient(farthest-corner at 20% 0%, rgba(178, 6, 97, 1) 2%, rgba(16, 11, 58, 1)65%, rgba(255, 7, 139, 1)95%);
+  background-repeat: no-repeat;
+}
+
+.profile{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  /* aspect-ratio: 1; */
+  object-fit: cover;
+  object-position: top;
+  border: solid 1px var(--cor-p1);
+}
+
+.container{
+  max-width: 15.52rem;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 20px 10px;
+}
+
+.botao {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.abtn{
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cor-p1);
+  border: 1px solid #ABA9A9;
+  background: rgba(102, 102, 102, 0.3);
+  padding: 16px 8px;
+  border-radius: 50px;
+  margin: 0.75rem 0;
+  }
+
+
+  .abtn:hover{
+    background-color: rgba(236, 236, 236, 0.3);
+  }
+
+.btn {
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--cor-p2);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 1.5rem;
+}
+i.fa-brands{
+  color: var(--cor-p1);
+  font-size: 1.375rem;
+}
+
+.feito{
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+font-style: italic;
+  justify-content: flex-start;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-left: 45px;
+  position: relative;
+}
+.feito::after{
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: inline;
+  right: 35px;
+  background-image: url("/img/heart-regular_white.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+#swift button{
+  display: flex;
+justify-content: flex-start;
+height: 25px;
+width: 60px;
+border-radius: 50px;
+border: solid 1px rgba(171, 169 , 169, 0.5);
+background-color: rgba(74, 74 , 77, 0.2);
+position: relative;
+margin-bottom: 54px;
+}
+
+#swift button::before{
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-image: url("/img/moon.svg");
+  position: absolute;
+  top: -3px;
+  background-repeat: no-repeat;
+}
+
+/*---------------modo light----------------*/
+.light .container-bg {
+  color: var(--cor-p1);
+  background: radial-gradient(farthest-corner at 20% 0%, rgba(211, 62, 141, 1) 2%, rgba(224, 222, 241, 1)65%, rgba(211, 62, 141, 1)95%);
+  background-repeat: no-repeat;
+}  
+
+.light .principal{
+  color: var(--cor-p2);
+}
+.light .profile{
+  border: solid 1px var(--cor-p2);
+}
+
+.light .abtn{
+  color: var(--cor-p2);
+  border: 1px solid #6C6A6A;
+  background: rgba(236, 236, 236, 0.3);
+  }
+.light .feito{
+  color: var(--cor-p2);
+}
+.light .feito::after{
+  background-image: url("/img/heart-regular_black.svg");
+}
+
+.light #swift button{
+  justify-content: flex-end;
+border: solid 1px rgba(108, 106 , 106, 1);
+background-color: rgba(236, 236 , 236, 0.3);
+}
+
+.light #swift button::before{
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-image: url("/img/sun.svg");
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  background-repeat: no-repeat;
+}
+
+.light i.fa-brands{
+   color: #060415;
+}
+
+.light  .abtn:hover{
+    background-color: rgba(255, 255, 255, 1);
+  }
