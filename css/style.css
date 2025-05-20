@@ -23,30 +23,29 @@ a {
 .container-bg {
   height: 100vh;
   font-family:'Montserrat', sans-serif;
-  padding: 60px 20px 0 20px;
+  padding: 60px 40px;
   color: var(--cor-p1);
   background: radial-gradient(farthest-corner at 20% 0%, rgba(178, 6, 97, 1) 2%, rgba(16, 11, 58, 1)65%, rgba(255, 7, 139, 1)95%);
   background-repeat: no-repeat;
 }
-
-.profile{
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  /* aspect-ratio: 1; */
-  object-fit: cover;
-  object-position: top;
-  border: solid 1px var(--cor-p1);
-}
-
 .container{
-  max-width: 15.52rem;
+  max-width: 350px;
   margin: 0 auto;
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
 }
+
+.profile{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+  border: solid 1px var(--cor-p1);
+}
+
 
 .principal{
   font-size: 1rem;
@@ -91,22 +90,22 @@ i.fa-brands{
 
 .feito{
   display: flex;
-  flex-wrap: wrap;
   font-style: italic;
   justify-content: center;
   font-size: 0.75rem;
   font-weight: 400;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-right: 25px;
+  /* margin-top: 20px; */
+  /* margin-bottom: 15px; */
+  /* margin-right: 25px; */
   position: relative;
+  padding: 20px 10px 0 0;
 }
 .feito::after{
   content: "";
   width: 22px;
   height: 22px;
   display: inline;
-  right: -30px;
+  right: -20px;
   background-image: url("../img/heart-regular_white.svg");
   background-repeat: no-repeat;
   position: absolute;
