@@ -81,7 +81,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 40px;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 i.fa-brands{
   color: var(--cor-p1);
